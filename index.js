@@ -58,24 +58,35 @@ console.log(kk,dd)
 
 const title = document.getElementById("title")
 
-console.log(title)
+// console.log(title)
 
-title.innerHTML = "LOL"
-title.id = "momm"
+// title.innerHTML = "LOL"
+// title.id = "momm"
 
-const kim = document.getElementById("momm")
+// const kim = document.getElementById("momm")
 
 
 
-kim.innerHTML = "asfd"
+// kim.innerHTML = "asfd"
 
-kim.style.color = "white"
+// kim.style.color = "white"
 
 function handles(){
     console.log("change")
 }
 
 window.addEventListener("resize", handles)
+
+const CLICKED_CLASS = "clicked"
+
+function handleClick(){
+    title.classList.toggle(CLICKED_CLASS)
+}
+
+function init(){
+    title.addEventListener("click",handleClick)
+}
+init()
 
 // const agde = prompt("age?")
 

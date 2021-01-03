@@ -3,6 +3,9 @@ body{
 }
 
 h1{
+ color: rgb(88, 192, 211);
+}
 
-    color: white;
+.clicked {
+    color : #080888
 }
